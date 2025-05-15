@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace Mango.Services.CouponAPI.Controllers
 {
     [ApiController, Route("api/[controller]")]
-    public class CouponsController : Controller
+    public class CouponController : Controller
     {
         private readonly AppDbContext _appDb;
         private ResponseDto _response;
         private IMapper _mapper;
-        public CouponsController(AppDbContext db, IMapper mapper)
+        public CouponController(AppDbContext db, IMapper mapper)
         {
             _appDb = db;
             _response = new ResponseDto();
